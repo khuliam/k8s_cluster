@@ -1,45 +1,9 @@
 
 # Vagrantfile and Scripts to Automate Kubernetes Setup using Kubeadm [Practice Environment for CKA/CKAD and CKS Exams]
 
-A fully automated setup for CKA, CKAD, and CKS practice labs is tested on the following systems:
-
-- Windows
-- Ubuntu Desktop
-- Mac Intel-based systems
-
-If you are MAC Silicon user, Please use the follwing repo.
-
-- [Vagrant Kubeadm Setup on MAC Silicon](https://github.com/techiescamp/vagrant-kubeadm-mac-silicon)
-
-## CKA, CKAD, CKS, or KCNA Vouchers Codes
-
-As part of our commitment to helping the DevOps community save money on Kubernetes Certifications, we continuously update the latest voucher codes from the Linux Foundation
-
-🚀  CKA, CKAD, CKS, or KCNA exam aspirants can **save 30%** today using code **30COMTECHIES** at https://kube.promo/devops. It is a limited-time offer from the Linux Foundation.
-
-The following are the best bundles to **save 40% (up to $788)** with code **FOURTH24CT**
-
-- KCNA + KCSA + CKA + CKAD + CKS ($788 Savings): [kube.promo/kubestronaut](https://kube.promo/kubestronaut)
-- CKA + CKAD + CKS Exam bundle ($528 Savings): [kube.promo/k8s-bundle](https://kube.promo/k8s-bundle)
-- CKA + CKS Bundle ($355 Savings) [kube.promo/bundle](https://kube.promo/bundle)
-- KCNA + CKA ( $288 Savings) [kube.promo/kcka-bundle](https://kube.promo/kcna-cka)
-- KCSA + CKS Exam Bundle ($229 Savings) [kube.promo/kcsa-cks](https://kube.promo/kcsa-cks)
-- KCNA + KCSA Exam Bundle ($203 Savings) [kube.promo/kcna-kcsa](https://kube.promo/kcna-kcsa)
-
->Note: You have one year of validity to appear for the certification exam after registration
-
 ## Setup Prerequisites
 
 - A working Vagrant setup using Vagrant + VirtualBox
-
-## Documentation
-
-Current k8s version for CKA, CKAD, and CKS exam: 1.29. 
-
-The setup is updated with 1.29 cluster version.
-
-Refer to this link for documentation full: https://devopscube.com/kubernetes-cluster-vagrant/
-
 
 ## Prerequisites
 
@@ -68,14 +32,13 @@ https://discuss.hashicorp.com/t/vagrant-2-2-18-osx-11-6-cannot-create-private-ne
 To provision the cluster, execute the following commands.
 
 ```shell
-git clone https://github.com/scriptcamp/vagrant-kubeadm-kubernetes.git
-cd vagrant-kubeadm-kubernetes
+git clone https://github.com/khuliam/k8s_cluster.git
+cd k8s_cluster
 vagrant up
 ```
 ## Set Kubeconfig file variable
 
 ```shell
-cd vagrant-kubeadm-kubernetes
 cd configs
 export KUBECONFIG=$(pwd)/config
 ```
